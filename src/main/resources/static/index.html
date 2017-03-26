@@ -13,18 +13,18 @@
 <div class="container" ng-controller="bandsController">
     <table class="table table-condensed table-striped table-hover">
         <thead>
-            <tr>
-                <th>Name</th>
-                <th>City</th>
-                <th>Year</th>
-            </tr>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Year</th>
+        </tr>
         </thead>
         <tbody>
-            <tr data-ng-repeat="band in bands">
-                <td>{{band.name}}</td>
-                <td>{{band.city}}</td>
-                <td>{{band.year}}</td>
-            </tr>
+        <tr data-ng-repeat="band in bands">
+            <td>{{band.name}}</td>
+            <td>{{band.city}}</td>
+            <td>{{band.year}}</td>
+        </tr>
         </tbody>
     </table>
 </div>
