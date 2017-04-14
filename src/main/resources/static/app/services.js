@@ -6,5 +6,8 @@
                 return result.data._embedded.bands;
             })
         }
+        this.addBand = function(band) {
+            return $http.post("bands", band);
+        }
     })
 }(angular));
