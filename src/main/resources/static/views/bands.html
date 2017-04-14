@@ -1,0 +1,18 @@
+<table class="table table-condensed table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Year</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-ng-repeat="band in bands">
+        <td>{{band.name}}</td>
+        <td>{{band.city}}</td>
+        <td>{{band.year}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<a ui-sref="new" class="btn btn-primary">Add Band</a>

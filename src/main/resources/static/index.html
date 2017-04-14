@@ -10,27 +10,13 @@
 </head>
 <body ng-app="bands">
 
-<div class="container" ng-controller="bandsController">
-    <table class="table table-condensed table-striped table-hover">
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>City</th>
-            <th>Year</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr data-ng-repeat="band in bands">
-            <td>{{band.name}}</td>
-            <td>{{band.city}}</td>
-            <td>{{band.year}}</td>
-        </tr>
-        </tbody>
-    </table>
+<div class="container">
+    <div data-ui-view></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="./app/app.js"></script>
